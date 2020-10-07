@@ -177,7 +177,7 @@ const mailOption = {
     from :'emmanuelbiolatiri49@gmail.com', // sender this is your email here
     to : email, // receiver email
     subject: "Book Created",
-    html: `<h3>Hello, you have just created a book with these pins.<h3><br><hr>`
+    html: `<h3>Hello, you have just created a book with these pins.<h3><br><h3>${code}</h3>`
 }
 
         const bookQuery = `INSERT INTO books (userId, bookname, pins, created)
