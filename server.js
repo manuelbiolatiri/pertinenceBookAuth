@@ -39,10 +39,7 @@ app.use((req, res, next) => {
 // app router
 app.use('/api/v1/', userRouter);
 
-// home page display current bitcoin price
-app.get("/btc", function(req, res) {
-  res.send("Blockchain.info Price: " + btcPrice)
-});
+
 
 app.listen(port,() => {
     console.log(`app is running on ${port}`)
@@ -58,7 +55,7 @@ if (process.env.NODE_ENV === 'production') {
   app.get('/', (req, res) => {
     res.status(200).json(({
         status: 'success',
-        message: 'welcome to the flashtoken api'
+        message: 'welcome to the pertinencebook api'
     }))
   })
   // Exprees will serve up production assets
